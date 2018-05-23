@@ -1,5 +1,5 @@
 ## urlrouter
-A prue url router form [](). I just modfiy it  to support  url query.
+A prue url router form [naoina/denco](https://github.com/naoina/denco). I just modfiy it  to support  url query.
 Such as:
  - "/test" only matches "/test"
  - "/test?" matches "/test" and "/test?aa=bb&cc=dd"
@@ -54,3 +54,4 @@ func main() {
 
 }
 ```
+[中文说明](https://www.cnblogs.com/xdao/p/golang_urlrouter.html)
