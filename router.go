@@ -433,7 +433,7 @@ func makeRecords(srcs []Record) (statics, params []*record) {
 			params = append(params, &record{Record: r})
 		} else {
 			//添加了?
-			if strings.Contains(r.Key,string(QueryCharacter)) {
+			if strings.LastIndex(r.Key, string(QueryCharacter)) == len(r.Key)-1 {
 				oldKey := r.Key
 				r.Key += string(WildcardCharacter) + termChar
 				params = append(params, &record{Record: r})
